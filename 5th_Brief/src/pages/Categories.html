@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="A page that display the categories of our project website shop Zone.">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="/src/assets/stylesheet/Categories.css">
+        <link rel="stylesheet" href="/src/output.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <title>Categories</title>
+    </head>
+
+    <body class="bg-slate-300">
+
+        <header>
+            <nav class="upper-bar">
+                <div class="flex">
+                    <img class="w-44" src="/src/assets/images/ShopZone-Logo.png"
+                        alt="logoShZ">
+                    <div class="flex items-center ml-10 w-1/3 overflow-hidden">
+                        <select class="select1 bg-MainColor text-white border-solid cursor-pointer focus:outline-none border-MainColor border-[1px]  focus:border-y-MainColor h-10"
+                            name="Categories" title="all" id>
+                            <option class="bg-transparent" value>All</option>
+                            <option class="bg-transparent"
+                                value>Clothes</option>
+                            <option class="bg-transparent"
+                                value>Electronic</option>
+                            <option class="bg-transparent" value>Beaty</option>
+                            <option class="bg-transparent" value>Home</option>
+                        </select>
+                        <div
+                            class="border-solid border-[1px] h-10  border-MainColor hover:bg-slate-400">
+                            <button type="button" title="search" class="p-2">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        <input id="searchInput" class="min-w-[410px] placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 h-10 pl-9 pr-3 focus:outline-none focus:border-MainColor focus:ring-MainColor focus:ring-1 overflow-hidden"
+                            placeholder="Search for anything..." type="text"
+                            name="search" />
+                    </div>
+                    <div class="absolute mt-2 right-0 flex mr-10">
+                        <div class="flex space-x-6 > * + *">
+                            <div class="flex space-x-1 > * + * mt-3">
+                                <img id="likely"
+                                    src="/src/assets/images/love.png"
+                                    alt="love" class="w-8 h-8">
+                                <span id="countcart2"
+                                    class="font-bold text-xl">0</span>
+                            </div>
+                            <div class="flex">
+                                <a href="/src/pages/panier.html">
+                                    <img class=" object-cover w-24"
+                                        src="/src/assets/images/logoCarteshoping.png"
+                                        alt="Cart">
+                                </a>
+                                <span id="countcart"
+                                    class="font-bold text-xl">0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+            <div
+                class="items-baar flex items-center justify-center bg-MainColor h-8 min-w-full">
+                <ul class="flex ">
+                    <li class="mx-10 p-1 w-20 text-center hover:bg-slate-500"><a
+                            class="text-white "
+                            href="/src/index.html">Home</a></li>
+                    <li class="mx-10 p-1 w-24 text-center hover:bg-slate-500"><a
+                            class="text-white "
+                            href="/src/pages/Categories.html">Categories</a>
+                    </li>
+                    <li class="mx-10 p-1 w-20 text-center hover:bg-slate-500"><a
+                            class="text-white " href="/src/pages/favorites.html">Favorites</a>
+                    </li>
+                    <li class="mx-10 p-1 w-30 text-center hover:bg-slate-500"><a
+                            class="text-white " href="/src/pages/Addproduct.html">Add Product</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <section class="p-4">
+
+            <div id="container " class="h-fit flex flex-wrap justify-center">
+
+                <div id="para1" class="overflow-hidden w-full sm:w-1/2 rounded-lg">
+
+                    <div class="relative overflow-hidden justify-self-center md:shrink-0 w-full rounded-lg">
+                        <div id="Swipe" class="flex transition-transform duration-500 ease-in-out">
+                            <div
+                                class="min-w-full h-68 flex items-center justify-center text-white"><img
+                                    src="/src/assets/images/imageTEST3.png"
+                                    alt></div>
+                            <div
+                                class="min-w-full h-68 flex items-center justify-center text-white"><img
+                                    src="/src/assets/images/imageTEST.png"
+                                    alt></div>
+                            <div
+                                class="min-w-full h-68 flex items-center justify-center text-white"><img
+                                    src="/src/assets/images/imageTEST2.png"
+                                    alt></div>
+                        </div>
+                        <button type="button" title="buttonSlide" id="prev"
+                            class="absolute top-1/2 left-4 -translate-y-1/2 text-white bg-gray-800 rounded-full p-2">&#10094;</button>
+                        <button type="button" title="buttonSlide" id="next"
+                            class="absolute top-1/2 right-4 -translate-y-1/2 text-white bg-gray-800 rounded-full p-2">&#10095;</button>
+                    </div>
+
+                </div>
+
+                <div id="para2" class="flex p-4 space-x-3 > * + * h-fit overflow-hidden flex-row lg:flex-row gap-4 mt-4">
+
+                    <div class="filter  bg-MainColor rounded flex flex-col align-center p-3 max-w-34 h-fit">
+                        <h3 class="mb-4 font-semibold text-gray-900 dark:text-white">Special
+                            Features</h3>
+                        <ul id="filter-ul"  class=" w-full text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                            <li class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
+                                <div class="flex items-center ps-3 ">
+                                    <input id="Clothes" type="checkbox" value
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                    <label for="Clothes"
+                                        class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Clothes</label>
+                                </div>
+                            </li>
+                            <li
+                                class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
+                                <div class="flex items-center ps-3">
+                                    <input id="Beauty" type="checkbox" value
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                    <label for="Beauty"
+                                        class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Beauty</label>
+                                </div>
+                            </li>
+                            <li
+                                class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
+                                <div class="flex items-center ps-3">
+                                    <input id="Electronics" type="checkbox"
+                                        value
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                    <label for="Electronics"
+                                        class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Electronics</label>
+                                </div>
+                            </li>
+                            <li
+                                class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
+                                <div class="flex items-center ps-3">
+                                    <input id="Books" type="checkbox"
+                                        value
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                    <label for="Books"
+                                        class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Books</label>
+                                </div>
+                            </li>
+                            <li
+                                class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
+                                <div class="flex items-center ps-3">
+                                    <input id="Headphones" type="checkbox" value
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                    <label for="Headphones"
+                                        class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Headphones</label>
+                                </div>
+                            </li>
+                            <li
+                                class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
+                                <div class="flex items-center ps-3">
+                                    <input id="Phones" type="checkbox" value
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                    <label for="Phones"
+                                        class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Phones</label>
+                                </div>
+                            </li>
+                        </ul>
+                        <h3 class="mb-4 font-semibold text-gray-900 dark:text-white mt-3">Target
+                            Audience</h3>
+                        <ul class="w-full text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                            <li
+                                class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
+                                <div class="flex items-center ps-3">
+                                    <input id="Men" type="checkbox" value
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                    <label for="Men"
+                                        class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Men</label>
+                                </div>
+                            </li>
+                            <li
+                                class="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
+                                <div class="flex items-center ps-3">
+                                    <input id="Women" type="checkbox"
+                                        value
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                    <label for="Women"
+                                        class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Women</label>
+                                </div>
+                            </li>
+                        </ul>
+                        <div
+                            class="flex flex-col items-center justify-center py-4 md:py-8 flex-wrap">
+                            <button type="button"
+                                class="text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800">All
+                                categories</button>
+                            <button type="button"
+                                class="text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800">Brands</button>
+                            <button type="button"
+                                class="text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800">Deals</button>
+                            <button type="button"
+                                class="text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800">Electronics</button>
+                            <button type="button"
+                                class="text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800">Gaming</button>
+                        </div>
+                    </div>
+
+                    <div id="allCard" class="allCards grid bg-MainColor rounded  p-4 gap-4 h-fit sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer class="bg-MainColor mt-6 overflow-hidden">
+            <div class="footer-items pt-6 pb-6 ">
+                <div class="first-items flex justify-between px-4 flex-wrap gap-3  ">
+                    <div class="itme2 w-[150px]">
+                        <h1 class="font-bold">Make Money with Us</h1>
+                        <p>Sell products on ShopZone
+                            Sell on ShopZone Business
+                            Sell apps on ShopZone
+                            Become an Affiliate
+                            Advertise Your Products
+                            Self-Publish with Us
+                            Host an ShopZone Hub
+                            See More Make Money with Us</p>
+                    </div>
+                    <div class="itme1 w-[150px]">
+                        <h1 class="font-bold">Get to Know Us Careers</h1>
+                        <p> Blog
+                            About ShopZone
+                            Investor Relations
+                            ShopZone Devices
+                            ShopZone Science
+                            Advertise Your Products
+                            Self-Publish with Us
+                            Host an ShopZone Hub
+                            See More Make Money </p>
+                    </div>
+                    <div class="itme2 w-[150px]">
+                        <h1 class="font-bold">Make Money with Us</h1>
+                        <p>Sell products on ShopZone
+                            Sell on ShopZone Business
+                            Sell apps on ShopZone
+                            Become an Affiliate
+                            Advertise Your Products
+                            Self-Publish with Us
+                            Host an ShopZone Hub
+                            See More Make Money with Us</p>
+                    </div>
+                    <div class="itme3 w-[150px]">
+                        <h1 class="font-bold">ShopZone Payment Products</h1>
+                        <p>mazon Business Card
+                            Shop with Points
+                            Reload Your Balance
+                            ShopZone Currency Converter
+                            Your Account
+                            Your Orders</p>
+                    </div>
+                    <div class="itme4 w-[150px]">
+                        <h1 class="font-bold">Let Us Help You</h1>
+                        <p>ShopZone and COVID-19
+                            Your Account
+                            Your Orders
+                            Shipping Rates & Policies
+                            Returns & Replacements
+                            Manage Your Content and Devices
+                            Help</p>
+                    </div>
+                    <div class="itme1 w-[150px]">
+                        <h1 class="font-bold">Get to Know Us Careers</h1>
+                        <p> Blog
+                            About ShopZone
+                            Investor Relations
+                            ShopZone Devices
+                            ShopZone Science
+                            Advertise Your Products
+                            Self-Publish with Us
+                            Host an ShopZone Hub
+                            See More Make Money </p>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="second-items bg-Maincolor1 pt-2 pb-3 px-5">
+                <div class="flex justify-center flex-wrap mb-1">
+                    <img class="w-24" src="/src/assets/images/ShopZone-Logo.png" alt="logoShZ">
+                </div>
+                <div class="flex justify-center items-center gap-8 mb-1 text-white">
+                    <div>Conditions of Use</div>
+                    <div>Privacy Notice</div>
+                    <div>Consumer Health Data Privacy Disclosure</div>
+                    <div>Your Ads Privacy Choices</div>
+                </div>
+                <div>
+                    <p class="text-center text-white">© 2024-2025, ShopZone.com, Inc. or its affiliates</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="/src/assets/js/Categories.js"></script>
+    </body>
+</html>

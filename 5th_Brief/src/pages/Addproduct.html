@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head> 
+<body class="m-0 p-0 bg-slate-300 font-customFont ">
+    <header class="bg-slate-300">
+        <nav class="upper-bar overflow-hidden">
+            <div class="flex relative">
+                <img class="w-44" src="../assets/images/ShopZone-Logo.png" alt="logoShZ">
+                <div class="flex items-center ml-10 w-1/3">
+                    <select
+                        class="select1 bg-MainColor text-white border-solid cursor-pointer focus:outline-none border-MainColor border-[1px]  focus:border-y-MainColor h-10"
+                        name="Categories" title="all" id="">
+                        <option class="bg-transparent" value="">All</option>
+                        <option class="bg-transparent" value="">Clothes</option>
+                        <option class="bg-transparent" value="">Electronic</option>
+                        <option class="bg-transparent" value="">Beaty</option>
+                        <option class="bg-transparent" value="">Home</option>
+                    </select>
+                    <div class="border-solid border-[1px] h-10  border-MainColor hover:bg-slate-400">
+                        <button type="button" onclick="filterProducts()" title="search" class="p-2">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <input id="searchInput" 
+                        class="min-w-[410px] placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 h-10 pl-9 pr-3 focus:outline-none focus:border-MainColor focus:ring-MainColor focus:ring-1 "
+                        placeholder="Search for anything..." type="text" name="search" />
+
+                </div>
+                <div class="Shopping-Cart absolute right-0 mt-2 mr-10 flex ">
+                    <div>
+                        <a href="">
+                            <img class=" object-cover w-24" src="/src/assets/images/logoCarteshoping.png" alt="Cart">
+                        </a>
+                    </div>
+                    <div>
+                        <span id="countcart" class="conutCart font-bold text-xl">0</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="items-baar flex items-center justify-center bg-MainColor h-8">
+            <ul class="flex ">
+                <li class="mx-10 p-1 w-20 text-center hover:bg-slate-500"><a class="text-white "
+                        href="../index.html">Home</a></li>
+                <li class="mx-10 p-1 w-24 text-center hover:bg-slate-500"><a class="text-white " href="/src/pages/Categories.html">Categories</a>
+                </li>
+                <li class="mx-10 p-1 w-20 text-center hover:bg-slate-500"><a class="text-white " href="/src/pages/favorites.html">Favorites</a>
+                </li>
+                <li class="mx-10 p-1 w-30 text-center hover:bg-slate-500"><a class="text-white " href="/src/pages/Addproduct.html">Add Product</a>
+                </li>
+            </ul>
+        </div>
+    </header>

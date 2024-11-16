@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="/src/page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body class="m-0 p-0 bg-slate-300 font-customFont">
+    <!-- this fo Navbar  -->
+
+    <header>
+      <nav class="upper-bar">
+        <div class="flex">
+          <img
+            class="w-44"
+            src="../assets/images/ShopZone-Logo.png"
+            alt="logoShZ"
+          />
+          <div class="flex items-center ml-10 w-1/3">
+            <select
+              class="select1 bg-MainColor text-white border-solid cursor-pointer focus:outline-none border-MainColor border-[1px] focus:border-y-MainColor h-10"
+              name="Categories"
+              title="all"
+              id=""
+            >
+              <option class="bg-transparent" value="">All</option>
+              <option class="bg-transparent" value="">Clothes</option>
+              <option class="bg-transparent" value="">Electronic</option>
+              <option class="bg-transparent" value="">Beaty</option>
+              <option class="bg-transparent" value="">Home</option>
+            </select>
+            <div
+              class="border-solid border-[1px] h-10 border-MainColor hover:bg-slate-400"
+            >
+              <button type="button" onclick="filterProducts()" title="search" class="p-2">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <input id="searchInput" 
+              class="min-w-[410px] placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 h-10 pl-9 pr-3 focus:outline-none focus:border-MainColor focus:ring-MainColor focus:ring-1"
+              placeholder="Search for anything..."
+              type="text"
+              name="search"
+            />
+          </div>
+          <div class="absolute mt-2 right-32 flex">
+            <div>
+              <a href="">
+                <img
+                  class="object-cover w-24"
+                  src="/src/assets/images/logoCarteshoping.png"
+                  alt="Cart"
+                />
+              </a>
+            </div>
+            <div>
+              <span id="countcart" class="conutCart font-bold text-xl">0</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="items-baar flex items-center justify-center bg-MainColor h-8">
+        <ul class="flex">
+          <li class="mx-10 p-1 w-20 text-center hover:bg-slate-500">
+            <a class="text-white" href="index.html">Home</a>
+          </li>
+          <li class="mx-10 p-1 w-24 text-center hover:bg-slate-500">
+            <a class="text-white" href="/src/pages/Categories.html">Categories</a>
+          </li>
+          <li class="mx-10 p-1 w-20 text-center hover:bg-slate-500">
+            <a class="text-white" href="/src/pages/favorites.html">Favorites</a>
+          </li>
+          <li class="mx-10 p-1 w-30 text-center hover:bg-slate-500">
+            <a class="text-white" href="/src/pages/Addproduct.html">Add Product</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- this fo slaider -->
+    <div class="w-full flex justify-between absolute top-96">
+      <button class="w-8 btn" onclick="prev()">
+        <img src="/src/assets/icons/arrow-left.svg" alt="" />
+      </button>
+      <button class="w-8 btn" onclick="next()">
+        <img class="rotate-180" src="/src/assets/icons/arrow-left.svg" alt="" />
+      </button>
+    </div>
+    <div class="slider">
+      <div class="img-box">
+        <img
+          src="/src/assets/images/imgSlide2.jpg"
+          class="mx-auto my-7 rounded-lg slider-img"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- this fo part de section  -->
+
+    <section>
+      <!-- this fo part paransipal  -->
+
+      
+
+      <div class="flex flex-wrap gap-8 justify-center p-2"  id="aa" >
+        <div class="contents">
+          <div
+            class="flex bg-slate-200 w-[900px] min-h-[500px] flex-wrap rounded-lg m-3"
+          >
+          
+            <a
+              href="Categories.html"
+              class="flex w-[900px] min-h-[500px] flex-wrap rounded-lg"
+            >
+              <h1 class="w-full text-center text-5xl mt-auto">
+                nothin to fiavers
+              </h1>
+              <div class="w-10 first-letter m-6 font-roboto mx-auto">
+                <img
+                  src="/src/assets/icons/plus-square-svgrepo-com.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+            
+            <!-- this fo part prix -->
+          </div>
+          
+          <div class="flex-1 m-2 rounded-lg">
+            
+            <div
+              id="add"
+              class="bg-white w-11/12 h-1/4 mx-auto mt-3 flex flex-wrap rounded-lg"
+            >
+              <img
+                class="w-20 mr-4 mb-4 ml-4"
+                src="/src/assets/images/prodacte-0.png"
+                alt=""
+              />
+              <div>
+                <h1 class="not-italic text-2xl">titel</h1>
+                <p class="text-sm/[2px] text-slate-300">
+                  Lorem ipsum dolor sit amet
+                </p>
+                <hr class="mt-3 mb-1" />
+                <h3 class="text-xl font-mono">PRIX = 12£</h3>
+                <div class="ml-2">
+                  <h3 class="text-sm/[1px] font-mono mt-2 mb-4">PRIX = 12£</h3>
+                  <h2 class="text-sm/[1px] font-mono mb-4">PRIX = 12£</h2>
+                  <img src="" alt="" />
+                </div>
+              </div>
+              
+            </div>
+            
+
+            <div
+              id="add"
+              class="bg-white w-11/12 h-1/4 mx-auto mt-3 flex flex-wrap rounded-lg"
+            >
+              <img
+                class="w-20 mr-4 mb-4 ml-4"
+                src="/src/assets/images/prodacte-0.png"
+                alt=""
+              />
+              <div>
+                <h1 class="not-italic text-2xl">titel</h1>
+                <p class="text-sm/[2px] text-slate-300">
+                  Lorem ipsum dolor sit amet
+                </p>
+                <hr class="mt-3 mb-1" />
+                <h3 class="text-xl font-mono">PRIX = 12£</h3>
+                <div class="ml-2">
+                  <h3 class="text-sm/[1px] font-mono mt-2 mb-4">PRIX = 12£</h3>
+                  <h2 class="text-sm/[1px] font-mono mb-4">PRIX = 12£</h2>
+                  <img src="" alt="" />
+                </div>
+                
+              </div>
+            </div>
+
+            <div
+              id="add"
+              class="bg-white w-11/12 h-1/4 mx-auto mt-3 flex flex-wrap rounded-lg"
+            >
+              <img
+                class="w-20 mr-4 mb-4 ml-4"
+                src="/src/assets/images/prodacte-0.png"
+                alt=""
+              />
+              <div>
+                <h1 class="not-italic text-2xl">titel</h1>
+                <p class="text-sm/[2px] text-slate-300">
+                  Lorem ipsum dolor sit amet
+                </p>
+                <hr class="mt-3 mb-1" />
+                <h3 class="text-xl font-mono">PRIX = 12£</h3>
+                <div class="ml-2">
+                  <h3 class="text-sm/[1px] font-mono mt-2 mb-4">PRIX = 12£</h3>
+                  <h2 class="text-sm/[1px] font-mono mb-4">PRIX = 12£</h2>
+                  <img src="" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="w-48 mx-auto mt-6">
+              <button
+                class="w-48 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded c">
+                Button
+              </button>
+            </div>
+            
+          </div>
+          
+        </div>
+        <!-- this fo part de anther cart  -->
+      <div class="w-full ">
+        <div class="w-11/12 mx-auto h-24 pt-1 bg-MainColor my-14">
+          <h1 class="text-center font-semibold	text-[30px]  font-mono mt-5 text-white	">
+            SOME THINGS YOU MIGHT LIKE
+          </h1>
+        </div>
+      </div>
+        
+      </div>
+      
+
+      
+    </section>
+
+    <!-- thies for a footer -->
+
+    <footer class="bg-MainColor mt-6">
+      <div class="footer-items pt-6 pb-6">
+        <div class="first-items flex justify-center flex-wrap gap-3">
+          <div class="itme2 w-[150px]">
+            <h1 class="font-bold">Make Money with Us</h1>
+            <p>
+              Sell products on ShopZone Sell on ShopZone Business Sell apps on
+              ShopZone Become an Affiliate Advertise Your Products Self-Publish
+              with Us Host an ShopZone Hub See More Make Money with Us
+            </p>
+          </div>
+          <div class="itme1 w-[150px]">
+            <h1 class="font-bold">Get to Know Us Careers</h1>
+            <p>
+              Blog About ShopZone Investor Relations ShopZone Devices ShopZone
+              Science Advertise Your Products Self-Publish with Us Host an
+              ShopZone Hub See More Make Money
+            </p>
+          </div>
+          <div class="itme2 w-[150px]">
+            <h1 class="font-bold">Make Money with Us</h1>
+            <p>
+              Sell products on ShopZone Sell on ShopZone Business Sell apps on
+              ShopZone Become an Affiliate Advertise Your Products Self-Publish
+              with Us Host an ShopZone Hub See More Make Money with Us
+            </p>
+          </div>
+          <div class="itme3 w-[150px]">
+            <h1 class="font-bold">ShopZone Payment Products</h1>
+            <p>
+              mazon Business Card Shop with Points Reload Your Balance ShopZone
+              Currency Converter Your Account Your Orders
+            </p>
+          </div>
+          <div class="itme4 w-[150px]">
+            <h1 class="font-bold">Let Us Help You</h1>
+            <p>
+              mazon and COVID-19 Your Account Your Orders Shipping Rates &
+              Policies Returns & Replacements Manage Your Content and Devices
+              Help
+            </p>
+          </div>
+          <div class="itme1 w-[150px]">
+            <h1 class="font-bold">Get to Know Us Careers</h1>
+            <p>
+              Blog About ShopZone Investor Relations ShopZone Devices ShopZone
+              Science Advertise Your Products Self-Publish with Us Host an
+              ShopZone Hub See More Make Money
+            </p>
+          </div>
+        </div>
+      </div>
+     
+      <div class="second-items bg-Maincolor1 pt-2 pb-3">
+        <div class="flex justify-center flex-wrap mb-1">
+          <img class="w-24" src="/src/assets/images/ShopZone-Logo.png" alt="logoShZ"/>
+        </div>
+        <div class="flex justify-center items-center gap-8 mb-1 text-white">
+          <div>Conditions of Use</div>
+          <div>Privacy Notice</div>
+          <div>Consumer Health Data Privacy Disclosure</div>
+          <div>Your Ads Privacy Choices</div>
+        </div>
+        <div>
+          <p class="text-center text-white">
+            © 2024-2025, ShopZone.com, Inc. or its affiliates
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="/src/assets/js/favorites.js"></script>
+    <script src="/src/assets/js/Home.js"></script>
+  </body>
+</html>

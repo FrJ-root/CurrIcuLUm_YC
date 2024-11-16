@@ -1,0 +1,19 @@
+
+#container{
+    width: 1380px;
+    margin: 8px;
+    padding-top: 8px;
+}
+.subNav{
+    width: 95%;
+    height: 60px;
+}
+.filter{
+    width: 40%;
+}
+.allCards .card1{
+    height: 500px;
+}
+.btn{
+    background-color: #008888;
+}
