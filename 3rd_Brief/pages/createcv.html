@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style/stylescreatecv.css">
+    <title>Page create cv</title>
+</head>
+<body >
+    <div class="desktop">
+        <header>
+            <div class="logo-nav">  
+                <div class="logo">
+                    <a href="/index.html"><img  style="width: 70px;"  src="/images/image mohamed/logo.png" alt="Logo" /></a>
+                </div>
+                <div  class="auth-buttons">
+                    <button class="signup"><a href="#">Sign up</a></button>
+                    <button class="login"><a href="#">Log in</a></button>
+                </div>    
+            </div>
+            <ul class="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li style="display: flex;">
+                    <a href="/pages/job.html" style="padding-right: 7px;">job</a>
+                    <div class="dropdown">
+                        <i class="down"></i>
+                        <ul class="dropdown-content">
+                          <li><a href="#link1">Link 1</a></li>
+                          <li><a href="#link2">Link 2</a></li>
+                          <li><a href="#link3">Link 3</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="/pages/createcv.html">Create cv</a></li>
+                <li><a href="/pages/companies.html">Companies</a></li>
+                <li><a href="/pages/recruiters.html">For job employers</a></li>
+            </ul>
+            
+        </header>
+    
+        
+    
+        <section>
+            <div>
+                <img class="cover-image" src="/images/image mohamed/background-image-createcv.jpg" alt="background-image-createcv">
+                <div class="card-cv">
+                    <h1>Create your cv</h1>
+                    <p>Our AI-powered tool creates a personalized resume in less than three minutes. Our speech to text functionality allows you to add or edit your professional experience in a flash. Get started now and start applying to jobs with your new customized resume.</p>
+                    <button><a href="http://">Create your cv </a></button>
+                    <a href="http://" class="find-job">already have a resume? find jobs</a>
+                </div>
+            </div>
+        </section>
+        <section class="features">
+    
+            <div class="feature-item">
+                <img src="/images/image mohamed/featureicon.png" alt="icon">
+                <h3>Simple and fast CV creation</h3>
+                <p>Specify your job position and our CV Maker will provide a comprehensive description for a compelling job resume. You can then customize it further as you need.</p>
+            </div>
+            <div class="feature-item">
+                <img src="/images/image mohamed/featureicon2.png" alt="icon">
+                <h3>Choose the designs for free</h3>
+                <p>Personalize your resume with a range of professional templates to create the best resume for your needs. Showcase your skills and style simply and effectively.</p>
+            </div>
+            <div class="feature-item">
+                <img src="/images/image mohamed/featureicon3.png" alt="icon">
+                <h3>Accessible for everyone</h3>
+                <p>Our CV maker is fully accessible and complies with international standards. It is also an intuitive tool that makes employment accessible to everyone.</p>
+            </div>
+        </section>
+        <section class="tailored">
+            <div class="tailored-image">
+                <img class="person-createcv" src="/images/image mohamed/Create an impressive.webp" alt="Person creating CV">
+            </div>
+            <div class="tailored-text">
+                <h2>Create an impressive resume tailored to the job you're applying to</h2>
+                <h3>Updating your resume can feel like a marathon. Our CV maker tool makes it easy.</h3>
+    
+                <div class="gg">
+                    <i><img src="/images/image mohamed/TilePointIcon.webp" alt="icon"></i>  <p>  Adapt your resume to the job your applying to using Gen AI.</p>
+                </div>
+                <div  class="gg">
+                    <i><img src="/images/image mohamed/TilePointIcon.webp" alt="icon"></i> <p>  Save time on lengthy updates using speech to text.</p>
+                </div>
+                <div  class="gg">
+                    <i><img src="/images/image mohamed/TilePointIcon.webp" alt="icon"></i> <p>  Unlimited possibilities to customize, using the free CV maker tool.</p>
+                </div>
+    
+                <button class="btn-createcv"><a href="http://">Create your cv</a></button>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="mobile">
+        <div class="logo-mobile">
+            <img  style="width: 70px;"  src="/images/image mohamed/logo.png" alt="Logo" />
+        </div>
+        <div class="nav-mobile">
+
+            <div class="menu-icon" onclick="toggleMenu()">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+
+            <nav class="nav-menu" id="navMenu">
+              <a href="#">Home</a>
+              <a href="#">Job</a>
+              <a href="#">Create cv</a>
+              <a href="#">For job employers</a>
+            </nav>  
+        </div>
+        <div class="place-login"> 
+            <img class="bg-login" src="/images/image mohamed/background-image-createcv.jpg" alt="image create cv">
+            <div class="login">
+                <h1>Login</h1>
+                <input type="email" placeholder="email">
+                <input type="password" placeholder="password">
+                <button type="submit">Login</button>
+                <div class="create-acount">
+                    <p>Don't have account? </p><a href="#">Create an acount</a>
+                </div>
+            </div>
+        </div>
+        <div class="createcv-mobile">
+
+            <h1>Create cv</h1>
+            <p>Our AI-powered tool creates a personalized resume in less than three minutes. Our speech to text functionality allows you to add or edit your professional experience in a flash. Get started now and start applying to jobs with your new customized resume.</p>
+            <button type="submit">Create cv</button>
+
+        </div>
+
+    </div>
+
+</body>
+<script>
+
+    function toggleMenu() {
+  const menu = document.getElementById("navMenu");
+  menu.classList.toggle("active");
+}
+
+</script>
+
+</html>
+

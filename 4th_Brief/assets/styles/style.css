@@ -1,0 +1,40 @@
+body {
+    background-image: url('/assets/images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#section5 button{
+    background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGk0aTZ3bTJhYWRsZXlieDRiYWFxNWw2d2p2bzF4bWZ6ZjJvb3l3NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5z9NvTAgfpcBN92dyM/giphy.webp'); 
+    background-repeat: no-repeat; 
+    background-size: 100%; 
+    color: white; 
+    width: 100px; 
+    height: 45px; border-radius: 10px;
+}
+
+/* _____________________Dark Mode */
+
+body.dark-mode {
+    background-color: #121212;
+}
+
+.dark-mode .card, .dark-mode .form-control {
+    background-color: #333333;
+    color: #ffffff;
+    border-color: #555555;
+}
+
+/* _____________________Light Mode */
+
+body.light-mode {
+    background-image: url(/assets/images/bg_whiote.jfif);
+}
+
+.light-mode .card, .light-mode .form-control {
+    background-color: #ffffff;
+    color: #333333;
+    border-color: #dddddd;
+}
+

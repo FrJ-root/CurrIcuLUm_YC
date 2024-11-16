@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: O;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f4f4f4;
+}
+:root{
+    --red:red;
+    --carts:#f0eaea9a;
+    --button-carts:#111111;
+    
+}
+#header{
+    background-image: url('../images/home1.jpg');
+    background-size: cover;
+    height: 75vh;
+}
+.home{
+    position: absolute;
+    padding-left: 50px;
+    padding-top: 100px;
+    
+}
+.home h1{
+    position: relative;
+    font-weight: bold;
+    font-size: 60px;
+    color: var(--red);
+}
+.home p{
+    position: relative;
+    font-size: 40px;
+}
+.btn{
+    font-weight: 700;
+    position: absolute;
+    background-color: var(--red);
+    color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 0.75em 4em;
+    margin-top: 40px;
+}
+.btn:hover{
+    background-color: rgb(228, 12, 12);
+}
+#container h2{
+    font-size: 35px;
+    padding-top: 20px;
+}
+.carts{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    padding-top: 50px;
+}
+.cart{
+    background-color: var(--carts);
+    border-radius: 7px;
+    box-shadow: 0 4px 1px 0px rgba(0, 0, 0, 0.4);
+    width: 350px;
+    height: 29vh;
+    text-align: center;
+}
+.cart h3{
+    font-size: 40px;
+    padding-top: 35px;
+}
+.cart span{
+    color: var(--red);
+}
+.capty{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.p-capty{
+    margin-top: 40px;
+    line-height: 27px;
+}
+.p-capty h4{
+    font-size: 28px;
+} 
+#nos-solutions h4{
+    font-size: 40px;
+}
+.ligne {
+    height: 2px; 
+    background-color: black; 
+    /* margin: 20px 0;  */
+}
+.soulitions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+    row-gap: 50px;
+    padding-top: 30px;
+    margin-bottom: 70px;
+}
+
+.solut{
+    position: relative;
+    background-color: var(--carts);
+    border-radius: 7px;
+    box-shadow: 0 4px 1px 0px rgba(0, 0, 0, 0.4);
+    width: 340px;
+    height: 42vh;
+    padding: 2em 1em;
+    cursor: pointer;
+}
+.solut:hover{
+    box-shadow: 0px 0px  10px 0px rgba(0, 0, 0,0.4);
+}
+.contet {
+    padding-top: 20px;
+}
+.contet h5{
+    font-size: 26px;
+}
+.contet h5 span{
+    color: var(--red);
+}
+.solut button{
+    position: absolute;
+    top:    188px;
+    background-color: var(--button-carts);
+    color: #ffffff;
+    border-radius: 17px;
+    border: none;
+    padding: 10px 19px;
+}
+.solut button:hover{
+    background-color: var(--red);
+    cursor: pointer;
+}
+.form-pub{
+    background-color: var(--carts);
+    height: auto;
+    width: auto;
+    margin: 20px;
+    border-radius: 10px;
+}
+#publier h6{
+    font-size: 40px;
+}
+.form form{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.input-container{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto;
+    row-gap: 15px;
+[O    padding-top: 10px;
+}
+#publier button{
+    width: 140px;
+    height: 40px;
+    background-color: rgb(21, 9, 59);
+    border-radius: 10px;
+    color: #ffffff;
+}
+.nbr-salarie{
+    grid-column: 2 span;
+}
+
+.form input{
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+@media screen and (max-width: 430px) {
+    .home h1{
+        font-size: 30px;
+    }
+    .home p{
+        font-size: 19px;
+    }
+    .btn{
+        padding: 0.75em 1em;
+    }
+    #container h2 {
+        font-size: 28px;
+        padding-top: 9px;
+        padding-left: 12px;
+    }
+    .p-capty {
+        text-align: left;
+        font-size: 14px;
+        padding-left: 12px;
+        margin-top: 69px;
+        line-height: 26px;
+    }
+    #nos-solutions h4 {
+        font-size: 29px;
+        padding-top: 20px;
+        padding-left: 12px;
+    }
+    #publier h6 {
+        font-size: 29px;
+        padding-left: 14px;
+    }
+    .solut button{
+        top: 160px;
+    }
+    .contet {
+        padding-top: 1px;
+    }
+
+    .carts{
+        gap: 36px;
+    }
+    .cart h3{
+        font-size: 29px;
+    }
+    .input-container{
+        display: block;
+    }
+    .form input{
+        width: 94%;
+    }
+}

@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/assets/images/back1.avif);
+    background-size: 100%;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 1%;
+    background-color: rgba(0, 0, 0, 0.474);
+    padding-bottom: 1%;
+    list-style-type: none;
+}
+
+
+.nav-links li a {
+
+    text-decoration: none;
+    color: rgb(210, 210, 210);
+}
+
+.nav-links li:hover {
+
+    border-bottom: #f9f9f9 solid 3px;
+
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    list-style-type: none;
+    padding: 10px;
+    z-index: 1;
+}
+
+.down {
+    border: solid rgb(210, 210, 210);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+}
+
+#container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-content{
+    justify-content: space-evenly;
+    width: 1000px;
+    margin-left: 100px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    width: auto;
+    height: 40px;
+}
+
+.menu .salaire,
+.menu .contrat,
+.menu .experience,
+.menu .etude {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    border-radius: 20px;
+    color: white;
+    height: 40px;
+}
+
+.case-content {
+    width: 1200px;
+     display: grid;
+     grid-template-columns: auto auto auto;
+     gap: 10px;
+     
+    .case1,
+    .case2,
+    .case3,
+    .case4,
+    .case5,
+    .case6,
+    .case7,
+    .case8,
+    .case9 {
+        height: 200px;
+        background-color: rgb(0, 0, 0);
+        margin-top: 20px;
+        width: 350px;
+        height: 550px;
+        border-radius: 10px;
+        margin-left: 20px;
+
+        h3 {
+            width: 350px;
+            height: auto;
+            text-align: center;
+        }
+    }
+
+    .case1 #backimg1,
+    .case2 #backimg2,
+    .case3 #backimg3,
+    .case4 #backimg4,
+    .case5 #backimg5,
+    .case6 #backimg6,
+    .case7 #backimg7,
+    .case8 #backimg8,
+    .case9 #backimg9 {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 10px 10px rgb(51, 52, 52);
+    }
+
+    .case1 #faceimg1,
+    .case2 #faceimg2,
+    .case3 #faceimg3,
+    .case4 #faceimg4,
+    .case5 #faceimg5,
+    .case6 #faceimg6,
+    .case7 #faceimg7,
+    .case8 #faceimg8,
+    .case9 #faceimg9 {
+        width: 120px;
+        border-radius: 10px;
+        position: relative;
+        bottom: 80px;
+        left: 115px;
+        box-shadow: 0 10px 10px rgb(51, 52, 52);
+    }
+
+    .company-name1,
+    .company-name2,
+    .company-name3,
+    .company-name4,
+    .company-name5,
+    .company-name6,
+    .company-name7,
+    .company-name8,
+    .company-name9 {
+        position: relative;
+        bottom: 60px;
+        text-align: center;
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+    .full-post1,
+    .full-post2,
+    .full-post3,
+    .full-post4,
+    .full-post5,
+    .full-post6,
+    .full-post7,
+    .full-post8,
+    .full-post9 {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        bottom: 30px;
+    }
+
+    .fulltime1,
+    .fulltime2,
+    .fulltime3,
+    .fulltime4,
+    .fulltime5,
+    .fulltime6,
+    .fulltime7,
+    .fulltime8,
+    .fulltime9 {
+        display: flex;
+        justify-content: space-evenly;
+        width: 120px;
+        align-items: center;
+    }
+
+    .posted1,
+    .posted2,
+    .posted3,
+    .posted4,
+    .posted5,
+    .posted6,
+    .posted7,
+    .posted8,
+    .posted9 {
+        display: flex;
+        justify-content: space-evenly;
+        width: 160px;
+        align-items: center;
+    }
+}
+
+footer {
+    background-color: #000;
+    padding: 60px 60px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.property {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.property h2 {
+    color: #c00000;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid green;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.property ul {
+    list-style: none;
+}
+
+.property ul li {
+    margin: 8px 0;
+}
+
+.property ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.property ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact-us{
+    position: relative;
+    top: 30px;
+    right: 60px;
+}
+
+.contact-us h2 {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    list-style: none;
+}
+
+.social-icons li {
+    margin-right: 15px;
+}
+
+.social-icons li a img {
+    width: 25px;
+    height: 25px;
+}
+
+
+@media (max-width: 768px) {
+
+    .menu-content{
+        width: 500px;
+    }
+    .menu{
+        width: 500px;
+    }
+    .case-content{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 5px;
+        width: 790px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .property {
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 480px){
+
+    .menu-content{
+        width: 200px;
+        margin-right: 200px;
+    }
+    .menu{
+        width: 480px;
+    }
+    .case-content{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 5px;
+        width: 30px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .property {
+        text-align: center;
+        margin: 20px 0;
+    }
+}
